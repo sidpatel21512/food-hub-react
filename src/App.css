@@ -1,0 +1,121 @@
+.container {
+  display: table;
+  position: relative;
+}
+
+.food-item {
+  display: flex;
+  padding: 10px; 
+}
+
+.avatar {
+  height: 50px;
+  width: 50px;
+  margin-right: 10px;
+}
+
+.food-detail {
+  display: block;
+}
+
+.card {
+  display: table;
+  border: black solid 1px;
+  margin: 15px;
+  width: 100%;
+}
+
+.card-footer > button {
+  width: 100%;
+  background-color: red;
+  color: white;
+  border: none;
+  text-align: center;
+  padding: 8px 14px;
+}
+
+.center {
+  justify-content: center;
+  align-items: center;
+  display: flex;
+}
+
+.navbar{
+  display: flex;
+  text-align: center;
+  background-color: black;
+}
+
+.navbar .navbar-title{
+  background-color: green;
+  color: white;
+  font-size: 20px;
+  padding: 12px 18px;
+}
+
+.navbar ul{
+  background-color: black;  
+  
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.navbar ul li {
+  display: inline;
+  font-size: 16px;
+  padding: 12px 16px;
+  text-align: center;
+}
+
+.navbar ul li a {
+  text-decoration: none;
+  color: white;
+}
+
+.cart{
+  color: white;
+  font-size: 16px;
+  padding: 12px 16px;
+}
+
+/* ====================================================== */
+
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
