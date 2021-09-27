@@ -1,5 +1,7 @@
 import react from "react";
+import { SharedStateContext } from "../contexts/SharedStateContext";
 class Cart extends react.Component {
+    static contextType = SharedStateContext;
     constructor(props) {
         super(props);
         this.state = {
@@ -8,9 +10,10 @@ class Cart extends react.Component {
     }
 
     render() {
+        const { cartItems } = this.context;
         return (
             <div className="cart">
-                Cart <span>{this.state.itemsIncart}</span>
+                Cart <span>{cartItems.length}</span>
             </div>
         )
     }
